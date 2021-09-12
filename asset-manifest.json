@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "https://kaloyan-kirilov.github.io/los-angeles/static/css/main.38952659.chunk.css",
-    "main.js": "https://kaloyan-kirilov.github.io/los-angeles/static/js/main.a5b342aa.chunk.js",
-    "main.js.map": "https://kaloyan-kirilov.github.io/los-angeles/static/js/main.a5b342aa.chunk.js.map",
+    "main.js": "https://kaloyan-kirilov.github.io/los-angeles/static/js/main.3e3ec2b6.chunk.js",
+    "main.js.map": "https://kaloyan-kirilov.github.io/los-angeles/static/js/main.3e3ec2b6.chunk.js.map",
     "runtime-main.js": "https://kaloyan-kirilov.github.io/los-angeles/static/js/runtime-main.5dc91a6e.js",
     "runtime-main.js.map": "https://kaloyan-kirilov.github.io/los-angeles/static/js/runtime-main.5dc91a6e.js.map",
     "static/js/2.09119497.chunk.js": "https://kaloyan-kirilov.github.io/los-angeles/static/js/2.09119497.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.5dc91a6e.js",
     "static/js/2.09119497.chunk.js",
     "static/css/main.38952659.chunk.css",
-    "static/js/main.a5b342aa.chunk.js"
+    "static/js/main.3e3ec2b6.chunk.js"
   ]
 }
