@@ -1,0 +1,1135 @@
+@font-face {
+  font-family: 'Highway Gothic';
+  src: url('./fonts/HighwayGothic.woff2') format('woff2'),
+      url('./fonts/HighwayGothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BioRhyme';
+  src: url('./fonts/BioRhyme-ExtraBold.woff2') format('woff2'),
+      url('./fonts/BioRhyme-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Saira';
+  src: url('./fonts/Saira-Medium.woff2') format('woff2'),
+      url('./fonts/Saira-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./fonts/Roboto-Regular.woff2') format('woff2'),
+      url('./fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Monda';
+  src: url('./fonts/Monda-Bold.woff2') format('woff2'),
+      url('./fonts/Monda-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Oleo Script Swash Caps';
+  src: url('./fonts/OleoScriptSwashCaps-Regular.woff2') format('woff2'),
+      url('./fonts/OleoScriptSwashCaps-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist Medium';
+  src: url('./fonts/Urbanist-Medium.woff2') format('woff2'),
+      url('./fonts/Urbanist-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Urbanist Semi-Bold';
+  src: url('./fonts/Urbanist-SemiBold.woff2') format('woff2'),
+      url('./fonts/Urbanist-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SourceCodePro";  
+  src: url("./fonts/SourceCodePro-SemiBoldItalic.woff2") format("woff2"),
+      url("./fonts/SourceCodePro-SemiBoldItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 1vw;
+}
+
+body {
+  background: #c6bfac;
+  max-width: 100%;
+  position: relative;
+}
+
+a {
+  color: #0c4fb7;
+}
+
+a:hover {
+  color: #d93b26;
+}
+
+/* ----- Header ----- */
+header {
+  position: relative;
+}
+
+#header-bar {
+  width: 100%;
+  height: 2.7rem;
+  background-image: linear-gradient(hsl(227, 20%, 50%), hsl(226, 20%, 55%));
+  border-bottom: 2px solid hsl(227, 20%, 40%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#header-title {
+  width: 16rem;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  border: .4rem solid hsl(228, 100%, 95%);
+  border-top: 0;
+  border-bottom: 0;
+  transform: skew(-30deg);
+}
+
+#title-content {
+  width: 95%;
+  height: 100%;
+  background: hsla(225, 65%, 89%, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  color: hsl(50, 90%, 85%);
+  font-family: 'BioRhyme';
+  font-size: 1.45rem;
+  letter-spacing: .15rem;
+  text-shadow: .1rem .1rem hsl(225, 15%, 23%);
+  transform: skew(30deg);
+}
+
+#clock-temp {
+  width: 11rem;
+  height: 100%;
+  position: absolute;
+  right: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Saira';
+  font-size: .95rem;
+  background: hsla(0, 0%, 100%, .25);
+  padding: 0 .5rem;
+}
+
+#clock {
+  width: 5.9rem;
+  color: transparent;
+}
+
+#temp {
+  width: 3.6rem;
+  color: transparent;
+}
+
+.digit-display {
+  background: hsl(225, 15%, 23%);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#header-img {
+  width: 100%;
+  height: 28rem;
+  background: url('./img/main/header-img.jpg') no-repeat center / cover;
+  border-bottom: 2px solid hsl(47, 12%, 30%);
+}
+
+#welcome-sign {
+  width: 16.5rem;
+  height: 11.5rem;
+  background-image: linear-gradient( hsl(145, 78%, 42%), hsl(145, 78%, 36%));
+  padding: 0 .4rem .4rem .4rem;
+  border-top: 0;
+  position: absolute;
+  top: 0;
+  left: 4%;
+  border-radius: 0 0 .75rem .75rem;
+}
+
+#sign-content {
+  width: 100%;
+  height: 100%;
+  border: .2rem solid white;
+  border-top: 0;
+  border-radius: 0 0 .5rem .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Highway Gothic';
+  color: white;
+  letter-spacing: .1rem;
+}
+
+#city-name {
+  font-size: 2.2rem;
+}
+
+.text-resize {
+  font-size: 1.4rem;
+  margin: .5rem;
+}
+
+.text-bg {
+  background: white;
+  color: #15a752;
+  padding: .1rem .5rem;
+  border-radius: .1rem;
+}
+
+#search {
+  width: 15.5rem;
+  height: 2.85rem;
+  background: rgba(255, 255, 255, .5);
+  border-radius: .35rem;
+  padding: .25rem;
+  position: absolute;
+  right: 1.5rem;
+  top: 4rem;
+}
+
+/* --- Disabled --- */
+#search:hover {
+  opacity: .5;
+}
+
+#search-bar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  /* --- Disabled --- */
+  pointer-events: none;
+  user-select: none;
+}
+
+#search-field {
+  width: 83%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: .75rem;
+  font-family: 'Roboto';
+  font-size: 1.1rem;
+  border-radius: .2rem 0 0 .2rem;
+}
+
+#search-field:focus::placeholder {
+  opacity: 0;
+}
+
+#search-button {
+  width: 17%;
+  height: 100%;
+  cursor: pointer;
+  border: none;
+  background: hsl(27, 100%, 68%);
+  border-radius: 0 .2rem .2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#search-button:hover {
+  background: hsl(27, 100%, 73%);
+}
+
+#search-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+#city-seal {
+  width: 20.5rem;
+  height: 11rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#seal {
+  width: 7.5rem;
+  height: 7.5rem;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+#seal::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+#seal:hover::after {
+  background: rgba(255, 255, 255, .25);
+}
+
+#la-seal {
+  width: 95%;
+  height: 95%;
+}
+
+#social-media {
+  width: 20.5rem;
+  height: 6.5rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#facebook, #twitter, #instagram {
+  width: 3.3rem;
+  height: 3.3rem;
+  border-radius: 50%;
+  border: .15rem solid hsla(0, 0%, 0%, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: .4rem;
+}
+
+#facebook {
+  background: hsl(219, 46%, 46%);
+}
+
+#facebook:hover {
+  background: hsl(219, 46%, 41%);
+}
+
+#twitter {
+  background: hsl(203, 84%, 52%);
+}
+
+#twitter:hover {
+  background: hsl(203, 84%, 47%);
+}
+
+#instagram {
+  background: #d74285 url('./img/main/insta-bg.jpg') no-repeat center / 115%;
+  position: relative;
+}
+
+#instagram::after {
+  content: '';
+  width: 110%;
+  height: 110%;
+  border-radius: 50%;
+  position: absolute;
+  background: hsl(0, 0%, 0%, .12);
+  opacity: 0;
+}
+
+#instagram:hover::after {
+  opacity: 1;
+}
+
+.icon {
+  width: 58%;
+  height: 58%;
+  z-index: 1;
+}
+
+/* ----- Navigation Menu ----- */
+nav {
+  width: 100%;
+  height: 2rem;
+  background: hsl(47, 12%, 45%);
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+#nav-menu {
+  width: 58rem;
+  height: 4rem;
+  background-image: linear-gradient(hsl(41, 98%, 63%), hsl(48, 100%, 72%));
+  border: .4rem solid white;
+  border-bottom: 0;
+  border-radius: .65rem .65rem 0 0;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+#nav-buttons {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  list-style: none;
+  font-family: 'Monda';
+  font-size: 1.4rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0c4fb7;
+  border-bottom: .25rem solid #f38d3f;
+  cursor: pointer;
+}
+
+.button:hover, .current-page {
+  color: #d93b26;
+  border-bottom:.25rem solid #4790FF;
+}
+
+.border-right {
+  border-right: .15rem solid #dea93f;
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hover-svg {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -2.15rem;
+  opacity: 0;
+}
+
+.current-page {
+  cursor: auto;
+  user-select: none;
+}
+
+.button:hover .hover-svg, .current-page .hover-svg {
+  opacity: 1;
+}
+
+/* ----- Page Content ----- */
+main {
+  background: #c6bfac;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#top-gradient {
+  width: 100%;
+  height: 15rem;
+  background-image: url('./img/main/top-gradient.svg');
+  background-repeat: repeat-x;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#content {
+  width: 58rem;
+  min-height: 50rem;
+  background: #fff6dd;
+  border: .4rem solid white;
+  border-top: 0;
+  border-radius: 0 0 .65rem .65rem;
+  margin-bottom: 1.75rem;
+  overflow: hidden;
+  text-align: justify;
+  font-family: 'Urbanist Medium';
+  font-size: 1.2rem;
+  z-index: 1;
+  position: relative;
+}
+
+#content p, #content h2 {
+  text-indent: 1rem;
+}
+
+.home-padding {
+  padding: 1.25rem 3.25rem 3.5rem 3.25rem;
+}
+
+.padding {
+  padding: 3.5rem 3.25rem;
+}
+
+.heading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: .25rem;
+  font-family: 'Urbanist Semi-Bold';
+}
+
+h2 {
+  background: #fff6dd;
+  position: absolute;
+  left: 0;
+  padding-right: .5rem;
+  padding-bottom: .25rem;
+  z-index: 1;
+}
+
+.heading-line {
+  width: 100%;
+  height: .15rem;
+  background: #d93b26;
+  position: relative;
+}
+
+.info-source {
+  text-indent: 0;
+  font-size: 1.1rem;
+}
+
+#los-angeles {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Oleo Script Swash Caps';
+  font-size: 3.25rem;
+  color: #005a9a;
+  letter-spacing: .05rem;
+  margin-bottom: .5rem;
+}
+
+.ornament {
+  width: 7rem;
+  margin: 0 .5rem;
+}
+
+.frame {
+  display: flex;
+  background: white;
+  border: .4rem solid white;
+}
+
+#home-video {
+  width: 100%;
+  height: 28.1rem;
+}
+
+#map {
+  width: 18rem;
+  float: left;
+  margin-right: 1.3rem;
+}
+
+#google-map {
+  width: 100%;
+  height: 23rem;
+}
+
+#la-griffith {
+  width: 17rem;
+  float: right;
+  margin-left: 1.3rem;
+}
+
+#county {
+  width: 19rem;
+  float: right;
+  margin-left: 1.3rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#state {
+  width: 20rem;
+  float: left;
+  margin-right: 1.3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#hollywood {
+  width: 16rem;
+  float: right;
+  margin-left: 1.3rem;
+}
+
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: .5rem;
+}
+
+.hover {
+  cursor: pointer;
+  position: relative;
+}
+
+.hover::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  position: absolute;
+}
+
+.hover:hover::after {
+  background: rgba(255, 255, 255, .25);
+}
+
+#videos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .75rem;
+}
+
+.video {
+  width: 100%;
+  height: 14.3rem;
+}
+
+#palms-left {
+  height: 48rem;
+  position: absolute;
+  bottom: 0;
+  left: -2.5rem;
+  z-index: 1;
+}
+
+#palms-right {
+  height: 48rem;
+  position: absolute;
+  bottom: 0;
+  right: -1rem;
+  z-index: 1;
+}
+
+/* ----- Footer ----- */
+footer {
+  width: 100%;
+  height: 4.5rem;
+  background: hsl(25, 13%, 44%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+#web-dev {
+  height: 2.5rem;
+  background: hsl(10, 12%, 29%);
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: hsl(270, 10%, 8%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  color: #ffffff;
+  font-family: "SourceCodePro";
+  font-size: 1.2rem;
+  margin-left: .4rem;
+  margin-right: 1.2rem;
+}
+
+#web-dev:hover {
+  background: hsl(10, 12%, 26%);
+}
+
+#web-dev:hover #name {
+ color: hsl(49, 92%, 80%);
+}
+
+#info {
+  width: 1.75rem;
+  height: 1.75rem;
+  background: hsl(26, 32%, 71%);
+  border-radius: 50%;
+  margin-left: .75rem;
+  cursor: pointer;
+}
+
+#info-icon {
+  width: 100%;
+  height: 100%;
+}
+
+#info:hover {
+  background: hsl(26, 32%, 78%);
+}
+
+/* ----- Modals ----- */
+#info-modal, #photo-modal {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#info-body {
+  width: 30rem;
+  background: #c6bfac url('./img/main/top-gradient.svg');
+  background-repeat: repeat-x;
+  background-size: 20rem;
+  border: .4rem solid white;
+  border-radius: 2%;
+  position: relative;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+#info-body p {
+  font-family: 'Urbanist Semi-Bold';
+  margin-bottom: 2%;
+}
+
+#info-body a {
+  font-family: 'Urbanist Medium';
+}
+
+#gallery-photo {
+  height: 85%;
+  position: relative;
+}
+
+.photo-image {
+  width: 100%;
+  height: 100%;
+  background: white;
+  border: .5rem solid white;
+}
+
+.close-button {
+  width: 2.1rem;
+  cursor: pointer;
+  position: absolute;
+  user-select: none;
+}
+
+#close-info {
+  top: .75rem;
+  right: .75rem;
+}
+
+#close-photo {
+  top: 1.5rem;
+  right: 1.5rem;
+  z-index: 1;
+  opacity: .75;
+}
+
+#gallery-nav {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+#gallery-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3%;
+}
+
+#prev, #next {
+  width: 3rem;
+  opacity: .75;
+  cursor: pointer;
+  user-select: none;
+}
+
+#close-photo:hover, #prev:hover, #next:hover {
+  opacity: 1;
+}
+
+/* ----- Image Preload ----- */
+#preload {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  background: url('./img/main/close.svg'),
+              url('./img/gallery/prev.svg'),
+              url('./img/gallery/next.svg'),
+              url('./img/page/la-city.jpg'),
+              url('./img/page/la-griffith.jpg'),
+              url('./img/page/county-flag.svg'),
+              url('./img/page/county-map.svg'),
+              url('./img/page/state-flag.svg'),
+              url('./img/page/state-map.svg'),
+              url('./img/page/state-image.jpg'),
+              url('./img/page/hollywood.jpg'),
+              url('./img/gallery/photo-1.jpg'),
+              url('./img/gallery/photo-2.jpg'),
+              url('./img/gallery/photo-3.jpg'),
+              url('./img/gallery/photo-4.jpg'),
+              url('./img/gallery/photo-5.jpg'),
+              url('./img/gallery/photo-6.jpg'),
+              url('./img/gallery/photo-7.jpg'),
+              url('./img/gallery/photo-8.jpg'),
+              url('./img/gallery/photo-9.jpg'),
+              url('./img/gallery/photo-10.jpg'),
+              url('./img/gallery/photo-11.jpg'),
+              url('./img/gallery/photo-12.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ----- Media Queries ----- */
+@media screen and (max-width: 1366px) {
+  :root {
+      font-size: 1.1vw;
+  }
+
+  #social-media {
+      width: 16rem;
+  }
+
+  #city-seal {
+      width: 16rem;
+  }
+
+  #palms-left {
+      height: 42rem;
+      left: -3.75rem;
+  }
+
+  #palms-right {
+      height: 42rem;
+      right: -2.5rem;
+  }
+}
+
+@media screen and (orientation: portrait) {
+  :root {
+      font-size: 1.5vw;
+  }
+
+  #city-seal {
+      width: 11rem;
+      height: 15rem;
+  }
+
+  #social-media {
+      width: 15rem;
+      height: 10rem;
+  }
+
+  #gallery-photo {
+      height: unset;
+      width: 90%;
+  }
+
+  #palms-left, #palms-right {
+      display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+      font-size: 3vw;
+  }
+
+  #header-bar {
+      height: 3rem;
+      z-index: 2;
+  }
+
+  #header-title {
+      position: absolute;
+      left: -2.1rem;
+      width: 19rem;
+      border: .45rem solid hsl(228, 100%, 95%);
+      border-top: 0;
+      border-bottom: 0;
+  }
+
+  #clock-temp {
+      width: 12rem;
+      font-size: 1.1rem;
+      right: 3%;
+  }
+
+  #clock {
+      width: 6.6rem;
+  }
+
+  #temp {
+      width: 4rem;
+  }
+
+  #welcome-sign {
+      width: 12.5rem;
+      height: 9.5rem;
+      top: 9%;
+      left: 3%;
+  }
+
+  #city-name {
+      font-size: 1.7rem;
+  }
+
+  .text-resize {
+      font-size: 1.1rem;
+  }
+
+  #search {
+      width: 14.5rem;
+      right: 1rem;
+      top: 3.7rem;
+  }
+
+  #search-field {
+      padding: .65rem;
+      font-size: 1.2rem;
+  }
+
+  #city-seal {
+      width: 10rem;
+      height: 14rem;
+  }
+
+  #social-media {
+      width: 15.5rem;
+      height: 10.5rem;
+  }
+
+  #facebook, #twitter, #instagram {
+      width: 4rem;
+      height: 4rem;
+      border: .2rem solid hsla(0, 0%, 0%, .2);
+  }
+
+  #header-img {
+      height: 25rem;
+  }
+
+  #nav-menu, #content {
+      width: 100%;
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
+  }
+
+  #content {
+      font-size: 1.35rem;
+  }
+
+  .info-source {
+      font-size: 1.3rem;
+  }
+
+  .hover-svg {
+      display: none;
+  }
+
+  #nav-menu {
+      height: 4.1rem;
+  }
+
+  #nav-buttons {
+      grid-template-columns: repeat(4, 1fr);
+      font-size: 1.55rem;
+  }
+
+  #home-button {
+      display: none;
+  }
+
+  .home-padding {
+      padding: 1rem 2rem 2.5rem 2rem;
+  }
+
+  .padding {
+      padding: 2.75rem 2rem;
+  }
+
+  #los-angeles {
+      font-size: 3rem;
+  }
+
+  .ornament {
+      width: 6.5rem;
+  }
+
+  #home-video {
+      height: 16rem;
+  }
+
+  .heading-line {
+      height: .2rem;
+  }
+
+  #web-dev {
+      height: 2.8rem;
+  }
+
+  #logo {
+      width: 2.8rem;
+      height: 2.8rem;
+  }
+
+  #name {
+      font-size: 1.3rem;
+      margin-left: .5rem;
+  }
+
+  #map {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 1.3rem;
+  }
+
+  #la-griffith {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1.3rem;
+  }
+
+  #county, #state {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 1.3rem;
+  }
+
+  #hollywood {
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 1.3rem;
+  }
+
+  #gallery {
+      grid-template-columns: repeat(2, 1fr);
+      gap: .75rem;
+  }
+
+  #videos {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1rem;
+  }
+
+  .video {
+      height: 16.8rem;
+  }
+
+  #gallery-photo {
+      width: 90vw;
+  }
+
+  .photo-image {
+      border: .4rem solid white;
+  }
+
+  .close-button {
+      width: 1.85rem;
+  }
+
+  #close-photo {
+      top: 1.2rem;
+      right: 1.2rem;
+  }
+
+  #prev, #next {
+      width: 2.5rem;
+  }
+
+  footer {
+      justify-content: space-between;
+      padding: 0 2rem;
+  }
+
+  #info {
+      width: 2.4rem;
+      height: 2.4rem;
+  }
+}

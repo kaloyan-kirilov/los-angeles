@@ -1,0 +1,22 @@
+import logo from '../img/main/k-logo.png';
+import info_icon from '../img/main/info.svg';
+
+function Footer() {
+    return (
+        <footer>
+        <a href="https://kaloyan-kirilov.github.io/" target="_blank" rel="noreferrer">
+            <div id="web-dev">
+                <div id="logo">
+                    <img src={logo} width="100%" height="100%" alt="logo" />
+                </div>
+                <div id="name">Kaloyan Kirilov</div>
+            </div>
+        </a>
+        <div id="info">
+            <img id="info-icon" src={info_icon} alt="attribution info" />
+        </div>
+    </footer>
+    )
+}
+
+export default Footer;
