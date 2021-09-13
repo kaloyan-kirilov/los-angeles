@@ -108,37 +108,37 @@ function Media() {
             <nav>
                 <div id="nav-menu">
                     <ul id="nav-buttons">
-                        <li class="button border-right" id="home-button">
-                            <Link class="nav-link" to={process.env.PUBLIC_URL + '/'}>
-                            <div class="button-content">
-                                <img class="hover-svg" src={star_icon} alt="svg" />Home
+                        <li className="button border-right" id="home-button">
+                            <Link className="nav-link" to={process.env.PUBLIC_URL + '/'}>
+                            <div className="button-content">
+                                <img className="hover-svg" src={star_icon} alt="svg" />Home
                             </div>
                             </Link>
                         </li>
-                        <li class="button border-right">
-                            <Link class="nav-link" to={process.env.PUBLIC_URL + '/city'}>
-                            <div class="button-content">
-                                <img class="hover-svg" src={star_icon} alt="svg" />City
+                        <li className="button border-right">
+                            <Link className="nav-link" to={process.env.PUBLIC_URL + '/city'}>
+                            <div className="button-content">
+                                <img className="hover-svg" src={star_icon} alt="svg" />City
                             </div>
                             </Link>
                         </li>
-                        <li class="button border-right">
-                            <Link class="nav-link" to={process.env.PUBLIC_URL + '/county'}>
-                            <div class="button-content">
-                                <img class="hover-svg" src={star_icon} alt="svg" />County
+                        <li className="button border-right">
+                            <Link className="nav-link" to={process.env.PUBLIC_URL + '/county'}>
+                            <div className="button-content">
+                                <img className="hover-svg" src={star_icon} alt="svg" />County
                             </div>
                             </Link>
                         </li>
-                        <li class="button border-right">
-                            <Link class="nav-link" to={process.env.PUBLIC_URL + '/state'}>
-                            <div class="button-content">
-                                <img class="hover-svg" src={star_icon} alt="svg" />State
+                        <li className="button border-right">
+                            <Link className="nav-link" to={process.env.PUBLIC_URL + '/state'}>
+                            <div className="button-content">
+                                <img className="hover-svg" src={star_icon} alt="svg" />State
                             </div>
                             </Link>
                         </li>
-                        <li class="button current-page">
-                            <div class="button-content">
-                                <img class="hover-svg" src={star_icon} alt="svg" />Media
+                        <li className="button current-page">
+                            <div className="button-content">
+                                <img className="hover-svg" src={star_icon} alt="svg" />Media
                             </div>
                         </li>
                     </ul>
@@ -146,70 +146,70 @@ function Media() {
             </nav>
             <main>
                 <div id="top-gradient"></div>
-                <div id="content" class="padding">
-                    <div class="heading"><h2>Photo Gallery</h2><div class="heading-line"></div></div>
+                <div id="content" className="padding">
+                    <div className="heading"><h2>Photo Gallery</h2><div className="heading-line"></div></div>
                     <br />
                     <div id="gallery">
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-1" style={{ pointerEvents: 'auto' }} src={photo_1} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-2" style={{ pointerEvents: 'auto' }} src={photo_2} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-3" style={{ pointerEvents: 'auto' }} src={photo_3} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-4" style={{ pointerEvents: 'auto' }} src={photo_4} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-5" style={{ pointerEvents: 'auto' }} src={photo_5} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-6" style={{ pointerEvents: 'auto' }} src={photo_6} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-7" style={{ pointerEvents: 'auto' }} src={photo_7} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-8" style={{ pointerEvents: 'auto' }} src={photo_8} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-9" style={{ pointerEvents: 'auto' }} src={photo_9} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-10" style={{ pointerEvents: 'auto' }} src={photo_10} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-11" style={{ pointerEvents: 'auto' }} src={photo_11} width="100%" alt="" onClick={photoClick} />
                         </div>
-                        <div class="frame hover" style={{pointerEvents: 'none'}}>
+                        <div className="frame hover" style={{pointerEvents: 'none'}}>
                             <img id="photo-12" style={{ pointerEvents: 'auto' }} src={photo_12} width="100%" alt="" onClick={photoClick} />
                         </div>      
                     </div>
                     <br />
                     <br />
-                    <div class="heading"><h2>Videos</h2><div class="heading-line"></div></div>
+                    <div className="heading"><h2>Videos</h2><div className="heading-line"></div></div>
                     <br />
                     <div id="videos">
                         <a href={video_1_url} target="_blank" rel="noreferrer">
-                        <div class="video frame hover">
-                            <iframe width="100%" height="100%" src={video_1_src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className="video frame hover">
+                            <iframe width="100%" height="100%" src={video_1_src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         </a>
                         <a href={video_2_url} target="_blank" rel="noreferrer">
-                        <div class="video frame hover">
-                            <iframe width="100%" height="100%" src={video_2_src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className="video frame hover">
+                            <iframe width="100%" height="100%" src={video_2_src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         </a>  
                         <a href={video_3_url} target="_blank" rel="noreferrer">
-                        <div class="video frame hover">
-                            <iframe width="100%" height="100%" src={video_3_src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className="video frame hover">
+                            <iframe width="100%" height="100%" src={video_3_src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         </a>   
                         <a href={video_4_url} target="_blank" rel="noreferrer">
-                        <div class="video frame hover">
-                            <iframe width="100%" height="100%" src={video_4_src} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div className="video frame hover">
+                            <iframe width="100%" height="100%" src={video_4_src} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                         </div>
                         </a>
                     </div>

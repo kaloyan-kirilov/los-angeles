@@ -48,17 +48,17 @@ function Header() {
                     </div>
                 </div>
                 <div id="clock-temp">
-                    <div id="clock" class="digit-display">00:00 NN</div>
-                    <div id="temp" class="digit-display">00°F</div>
+                    <div id="clock" className="digit-display">00:00 NN</div>
+                    <div id="temp" className="digit-display">00°F</div>
                 </div>
             </div>
             <div id="header-img"></div>
-            <Link class="nav-link" to={process.env.PUBLIC_URL + '/'}>
+            <Link className="nav-link" to={process.env.PUBLIC_URL + '/'}>
             <div id="welcome-sign">
                 <div id="sign-content">
-                    <p class="text-resize text-bg">WELCOME TO</p>
+                    <p className="text-resize text-bg">WELCOME TO</p>
                     <p id="city-name">Los Angeles</p>
-                    <p class="text-resize">CALIFORNIA</p>
+                    <p className="text-resize">CALIFORNIA</p>
                 </div>
             </div>
             </Link>
@@ -80,17 +80,17 @@ function Header() {
             <div id="social-media">
                 <a href="https://www.facebook.com/DiscoverLosAngeles" target="_blank" rel="noreferrer">
                     <div id="facebook">
-                        <img class="icon" src={facebook_icon} alt="facebook" />
+                        <img className="icon" src={facebook_icon} alt="facebook" />
                     </div>
                 </a>
                 <a href="https://twitter.com/discoverla" target="_blank" rel="noreferrer">
                     <div id="twitter">
-                        <img class="icon" src={twitter_icon} alt="twitter" />
+                        <img className="icon" src={twitter_icon} alt="twitter" />
                     </div>
                 </a>
                 <a href="https://www.instagram.com/discoverla/" target="_blank" rel="noreferrer">
                     <div id="instagram">
-                        <img class="icon" src={instagram_icon} alt="instagram" />
+                        <img className="icon" src={instagram_icon} alt="instagram" />
                     </div>
                 </a>
             </div>

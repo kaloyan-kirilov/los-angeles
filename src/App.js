@@ -15,13 +15,13 @@ function App() {
     <>
       <Router>
       <Header />
-        <Switch>
-          <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
-          <Route exact path={process.env.PUBLIC_URL + '/city'} component={City} />
-          <Route exact path={process.env.PUBLIC_URL + '/county'} component={County} />
-          <Route exact path={process.env.PUBLIC_URL + '/state'} component={State} />
-          <Route exact path={process.env.PUBLIC_URL + '/media'} component={Media} />
-        </Switch>
+      <Switch>
+        <Route exact path={process.env.PUBLIC_URL + '/'} component={Home} />
+        <Route exact path={process.env.PUBLIC_URL + '/city'} component={City} />
+        <Route exact path={process.env.PUBLIC_URL + '/county'} component={County} />
+        <Route exact path={process.env.PUBLIC_URL + '/state'} component={State} />
+        <Route exact path={process.env.PUBLIC_URL + '/media'} component={Media} />
+      </Switch>
       <Footer />
       </Router>
       <Info />

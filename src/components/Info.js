@@ -1,25 +1,19 @@
 import close_icon from '../img/main/close.svg';
 
 function Info() {
-    window.onload = function() {
-        document.getElementById('info-icon').onclick = function() {
-        document.getElementById('info-modal').style.display = 'flex';
-        }
-
-        document.getElementById('close-info').onclick = function() {
-            document.getElementById('info-modal').style.display = 'none';
-        }
-    };
+    function closeInfo() {
+        document.getElementById('info-modal').style.display = 'none';
+    }
 
     return (
         <div id="info-modal">
             <div id="info-body">
-                <img id="close-info" class="close-button" src={close_icon} alt="close" />
+                <img id="close-info" className="close-button" src={close_icon} alt="close" onClick={closeInfo} />
                 <p>Attribution Links :</p>
                 <ul style={{listStyle: 'none'}}>
                     <li style={{margin: '2%'}}><a href="https://www.istockphoto.com/photo/los-angeles-downtown-gm845028274-138258583" target="_blank" rel="noreferrer">Downtown Los Angeles</a></li>
                     <li style={{margin: '2%'}}><a href="https://commons.wikimedia.org/wiki/File:Seal_of_Los_Angeles.svg" target="_blank" rel="noreferrer">City of Los Angeles Seal</a></li>
-                    <li style={{margin: '2%'}}><a href="https://www.flaticon.com/free-icon/star_786331?term=star&page=1&position=5&page=1&position=5&related_id=786331" target="_blank" rel="noreferrer">Menu Star Icon</a></li>
+                    <li style={{margin: '2%'}}><a href="https://www.flaticon.com/free-icon/star_786331?term=star&page=1&position=5&page=1&position=5&related_id=786331" target="_blank" rel="noreferrer">Menu Star & Favicon</a></li>
                     <li style={{margin: '2%'}}><a href="https://freesvgdesigns.com/arrows-317/" target="_blank" rel="noreferrer">City Name Decoration</a></li>
                     <li style={{margin: '2%'}}><a href="https://www.shutterstock.com/image-photo/los-angeles-california-usa-october-13-1833057208" target="_blank" rel="noreferrer">Los Angeles Echo Park</a></li>
                     <li style={{margin: '2%'}}><a href="https://www.reddit.com/r/LosAngeles/comments/b34ew5/griffith_park_on_sunday/" target="_blank" rel="noreferrer">Griffith Observatory & DTLA</a></li>

@@ -11,8 +11,8 @@ function Photo() {
     return (
         <div id="photo-modal">
             <div id="gallery-photo">
-                <img id="close-photo" class="close-button" src={close_icon} alt="close" onClick={closePhoto} />
-                <img class="photo-image" src="" alt="modal" />
+                <img id="close-photo" className="close-button" src={close_icon} alt="close" onClick={closePhoto} />
+                <img className="photo-image" src="" alt="modal" />
                 <div id="gallery-nav">
                     <div id="gallery-buttons">
                         <img id="prev" src={prev_icon} alt="prev" />
