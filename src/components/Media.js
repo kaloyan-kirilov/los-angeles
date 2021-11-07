@@ -97,8 +97,8 @@ function Media() {
     const video_2_src = "https://www.youtube.com/embed/vGGL7X_s4AQ";
     const video_2_url = "https://youtu.be/vGGL7X_s4AQ";
 
-    const video_3_src = "https://www.youtube.com/embed/KUyXrYT38lc";
-    const video_3_url = "https://youtu.be/KUyXrYT38lc";
+    const video_3_src = "https://www.youtube.com/embed/o-U7UlZ6vcA";
+    const video_3_url = "https://youtu.be/o-U7UlZ6vcA";
 
     const video_4_src = "https://www.youtube.com/embed/lL5RPnXyklk";
     const video_4_url = "https://youtu.be/lL5RPnXyklk";
